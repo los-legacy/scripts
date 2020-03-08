@@ -7,7 +7,6 @@ else
 	export TARGET_DATE=$@;
 fi 
 
-export DEVICE=zerofltexx
 export SYSTEM_PATH=/home/benlue/android/lineage
 export OUTPUT_PATH=$SYSTEM_PATH/out/target/product/$DEVICE
 export FILENAME="lineage-17.1-$TARGET_DATE-UNOFFICIAL-$DEVICE.zip"
