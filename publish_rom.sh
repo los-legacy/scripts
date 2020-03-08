@@ -58,12 +58,14 @@ if [ -e $OUTPUT_PATH/$FILENAME ]; then
 	
 	NO_SUCCESS=1	
 	while [ "$NO_SUCCESS" != "0" ]; do
+		echo "Rom: $FILENAME wird hochgeladen"
 		scp $OUTPUT_PATH/$FILENAME $USER@los-legacy.de:/var/www/html/files/$DEVICE/
 		NO_SUCCESS=$?;
 	done
 	
 	NO_SUCCESS=1
 	while [ "$NO_SUCCESS" != "0" ]; do
+		echo "md5 File: $FILENAME.md5sum wird hochgeladen"
 		scp $OUTPUT_PATH/$FILENAME.md5sum $USER@los-legacy.de:/var/www/html/files/$DEVICE/
 		NO_SUCCESS=$?;		
 	done	
