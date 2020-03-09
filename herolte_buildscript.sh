@@ -1,4 +1,5 @@
 #!/bin/bash
+set -x
 cd /home/exodusnick/LineageOS/17.1_LineageOS/
 make clean
 export PATH=~/bin:$PATH
